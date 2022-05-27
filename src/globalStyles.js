@@ -22,7 +22,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-    font-size: 100%;
+  font-size: 100%;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -53,7 +53,7 @@ table {
 *:after {
   box-sizing: border-box;
   line-height: 1.5;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Odibee Sans' ,'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
 }
@@ -79,7 +79,7 @@ html {
   --reach-dialog: 1;
 }
 
-html, body, #root {
+html, body, #app {
   height: 100%;
 }
 `;
