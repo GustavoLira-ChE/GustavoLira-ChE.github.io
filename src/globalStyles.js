@@ -53,7 +53,7 @@ table {
 *:after {
   box-sizing: border-box;
   line-height: 1.5;
-  font-family: 'Odibee Sans' ,'Raleway', sans-serif;
+  font-family: 'Montserrat','Odibee Sans' ,'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
 }
