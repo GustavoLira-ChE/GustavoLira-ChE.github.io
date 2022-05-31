@@ -2,7 +2,8 @@ import React from "react";
 import  styled from "styled-components/macro";
 import { DiGithubBadge } from "react-icons/di";
 import { AiFillLinkedin, AiFillTwitterCircle, AiOutlineCodepenCircle } from "react-icons/ai";
-import { QUERIES } from "../constants";
+import { QUERIES } from "../constants"
+
 
 const Footer = () => {
     return (
@@ -40,12 +41,15 @@ const FooterSection = styled.footer`
   background-color: var(--color-black);
   color: var(--color-gray);
   padding: 16px;
+  margin-top: 32px;
 `
 const FooterWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media()
+  @media ${QUERIES.phoneAndSmaller}{
+    flex-direction: column;
+  }
 `
 const IconList = styled.ul`
   display: flex;
@@ -54,18 +58,30 @@ const IconList = styled.ul`
 const DiGithubBadgeStyle = styled(DiGithubBadge)`
   color: var(--color-gray);
   font-size: 3em;
+  &:hover, &:focus{
+    color: var(--color-white);
+  }
 `
 const AiFillLinkedinStyle = styled(AiFillLinkedin)`
   color: var(--color-gray);
   font-size: 3em;
+  &:hover, &:focus{
+    color: var(--color-white);
+  }
 `
 const AiFillTwitterCircleStyle = styled(AiFillTwitterCircle)`
   color: var(--color-gray);
   font-size: 3em;
+  &:hover, &:focus{
+    color: var(--color-white);
+  }
 ` 
 const AiOutlineCodepenCircleStyle = styled(AiOutlineCodepenCircle)`
   color: var(--color-gray);
   font-size: 3em;
+  &:hover, &:focus{
+    color: var(--color-white);
+  }
 `
 
 export default Footer;
