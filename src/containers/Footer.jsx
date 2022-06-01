@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <FooterSection>
             <FooterWrapper>
-                <h3>gu.lirar23@gmail.com</h3>
+                <EmailSend href = "mailto: gu.lirar23@gmail.com">Send Email</EmailSend>
                 <IconList>
                     <li>
                         <a href="https://github.com/GustavoLira-ChE" target="_blank">
@@ -47,8 +47,17 @@ const FooterWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 900px;
+  margin: auto;
   @media ${QUERIES.phoneAndSmaller}{
     flex-direction: column;
+  }
+`
+const EmailSend = styled.a`
+  text-decoration: none;
+  color: var(--color-gray);
+  &:hover, &:focus{
+    color: var(--color-white);
   }
 `
 const IconList = styled.ul`
