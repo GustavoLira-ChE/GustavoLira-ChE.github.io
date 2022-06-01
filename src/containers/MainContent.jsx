@@ -22,6 +22,7 @@ const WelcomeWrapper = styled.div`
   color: var(--color-white);
   text-align: center;
   font-size: 2em;
+  max-width: 900px;
 
   & strong {
       color: var(--color-secondary);
