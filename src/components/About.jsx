@@ -2,10 +2,12 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import { DiCss3, DiBootstrap, DiSass, DiReact, DiNodejsSmall, DiGit } from "react-icons/di";
 import { SiStyledcomponents, SiJavascript, SiWebpack, SiExpress, SiJest } from "react-icons/si";
+import { QUERIES } from '../constants';
 
 const About = () => {
     return (
         <AboutWrapper>
+          <AboutContainer>
             <BioSection>
                 <p>
                     I'm a chemical engineer and have a Master's degree in Chemical Engineering. I've worked in the design, optimization, and control of chemical processes using AspenPlus.
@@ -33,6 +35,7 @@ const About = () => {
                     <RelativeWrapper><DiGitStyled /></RelativeWrapper>
                 </ul>
             </Technologies>
+          </AboutContainer>
         </AboutWrapper>
     );
 };
@@ -41,13 +44,25 @@ const AboutWrapper = styled.div`
   background-color: var(--color-white);
   padding: 16px;
   height: 90vh;
-  display: flex;
+  @media${QUERIES.phoneAndSmaller}{
+    height: inherit;
+  }
 `
-
+const AboutContainer = styled.div`
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  @media${QUERIES.tabletAndSmaller}{
+    flex-direction: column;
+  }
+`
 const BioSection = styled.article`
   padding: 16px;
   color: var(--color-gray);
   flex: 1;
+  text-align: justify;
 `
 
 const Technologies = styled.article`
