@@ -4,7 +4,10 @@ import styled from 'styled-components/macro';
 const Header = () => {
     return (
         <HeaderWrapper>
-            <nav>
+            <NavHeader>
+                <ImageContainer>
+                    <img src="./assets/android-chrome-192x192.png" alt="" />
+                </ImageContainer>
                 <UnorderList>
                     <div>
                         <ItemList>Blog</ItemList>
@@ -13,7 +16,7 @@ const Header = () => {
                         <ItemList>Contact</ItemList>
                     </div>
                 </UnorderList>
-            </nav>
+            </NavHeader>
         </HeaderWrapper>
     );
 };
@@ -23,10 +26,22 @@ const HeaderWrapper = styled.div`
   top: 0;
   height: 10vh;
   background-color: var(--color-primary);
-  display: flex;
-  justify-content: end;
   padding: 16px;
   z-index: 20;
+`
+const NavHeader = styled.nav`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: auto;
+`
+const ImageContainer = styled.div`
+    align-self: center;
+  & img {
+      width: 40px;
+      aspect-radio: 1/1;
+  }
 `
 const UnorderList = styled.ul`
     display: flex;
