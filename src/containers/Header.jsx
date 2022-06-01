@@ -1,19 +1,28 @@
 import React from 'react';
 import styled from 'styled-components/macro';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
         <HeaderWrapper>
             <NavHeader>
                 <ImageContainer>
-                    <img src="./assets/android-chrome-192x192.png" alt="" />
+                    <Link to="/">
+                        <img src="./assets/android-chrome-192x192.png" alt="" />
+                    </Link>
                 </ImageContainer>
                 <UnorderList>
                     <div>
-                        <ItemList>Blog</ItemList>
+                        <ItemList>
+                            <LinkStyled to="/projects">
+                                Projects
+                            </LinkStyled>
+                        </ItemList>
                     </div>
                     <div>
-                        <ItemList>Contact</ItemList>
+                        <ItemList>
+                            Blog
+                        </ItemList>
                     </div>
                 </UnorderList>
             </NavHeader>
@@ -67,6 +76,10 @@ const ItemList = styled.li`
       padding: 4px;
       border-radius: 5px;
   }
+`
+const LinkStyled = styled(Link)`
+  text-decoration: none;
+  color: inherit;
 `
 
 export default Header;
