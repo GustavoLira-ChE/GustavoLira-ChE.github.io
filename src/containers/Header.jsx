@@ -9,7 +9,7 @@ const Header = () => {
                 <ImageContainer>
                     <Link to="/">
                         <img src="./assets/android-chrome-192x192.png" alt="" />
-                        <h1>Gustavo Lira</h1>
+                        <SuperHeroTitle>Gustavo Lira</SuperHeroTitle>
                     </Link>
                 </ImageContainer>
                 <UnorderList>
@@ -45,6 +45,11 @@ const NavHeader = styled.nav`
   align-items: center;
   max-width: 900px;
   margin: auto;
+`
+const SuperHeroTitle = styled.h1`
+  text-decoration: none;
+  color: var(--color-white);
+  font-weight: 600;
 `
 const ImageContainer = styled.div`
     align-self: center;
