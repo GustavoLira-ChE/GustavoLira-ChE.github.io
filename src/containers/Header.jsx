@@ -9,6 +9,7 @@ const Header = () => {
                 <ImageContainer>
                     <Link to="/">
                         <img src="./assets/android-chrome-192x192.png" alt="" />
+                        <h1>Gustavo Lira</h1>
                     </Link>
                 </ImageContainer>
                 <UnorderList>
