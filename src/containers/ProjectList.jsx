@@ -18,6 +18,7 @@ const ProjectList = () => {
 const ProjectListWrapper = styled.section`
   background-color: var(--color-white);
   padding: 32px 16px;
+  min-height: 90vh;
 `
 const ProjectListContainer = styled.div`
   display: grid;
