@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import About from '../components/About';
-import Footer from '../containers/Footer';
 import MainContent from '../containers/MainContent';
 
 const Welcome = () => {
@@ -9,7 +8,6 @@ const Welcome = () => {
         <PageWrapper>
             <MainContent />
             <About />
-            <Footer />
         </PageWrapper>
     );
 };
