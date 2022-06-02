@@ -44,6 +44,8 @@ const AboutWrapper = styled.div`
   background-color: var(--color-white);
   padding: 16px;
   height: 90vh;
+  display: grid;
+  place-content: center;
   @media${QUERIES.phoneAndSmaller}{
     height: inherit;
   }
@@ -52,10 +54,11 @@ const AboutContainer = styled.div`
   max-width: 900px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   margin: auto;
   @media${QUERIES.tabletAndSmaller}{
     flex-direction: column;
+    align-items: center;
   }
 `
 const BioSection = styled.article`
