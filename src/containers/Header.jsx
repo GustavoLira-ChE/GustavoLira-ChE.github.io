@@ -7,10 +7,12 @@ const Header = () => {
         <HeaderWrapper>
             <NavHeader>
                 <ImageContainer>
-                    <Link to="/">
-                        <img src="./assets/android-chrome-192x192.png" alt="" />
-                        <SuperHeroTitle>Gustavo Lira</SuperHeroTitle>
-                    </Link>
+                    <SuperHeroTitle>
+                        <LinkStyled to="/">
+                            {/* <img src="./assets/android-chrome-192x192.png" alt="" /> */}
+                            Gustavo Lira
+                        </LinkStyled>
+                    </SuperHeroTitle>
                 </ImageContainer>
                 <UnorderList>
                     <div>
