@@ -9,6 +9,8 @@ import {
 import Header from '../containers/Header';
 import ProjectPage from '../pages/ProjectPage';
 import Footer from '../containers/Footer';
+import Page404 from '../pages/Page404';
+import Layout from '../containers/Layout';
 
 
 const App = () => {
@@ -17,8 +19,11 @@ const App = () => {
             <BrowserRouter>
                 <Header />
                 <Routes>
-                    <Route index path="/" element={<Welcome />} />
-                    <Route path="/projects" element={<ProjectPage />} />
+                    <Route path='/' element={<Layout />} >
+                        <Route index element={<Welcome />} />
+                        <Route path="projects" element={<ProjectPage />} />
+                        <Route path="*" element={<Page404 />} />
+                    </Route>
                 </Routes>
                 <Footer />
             </BrowserRouter>
