@@ -24,7 +24,9 @@ const Header = () => {
                     </div>
                     <div>
                         <ItemList>
-                            Blog
+                            <LinkStyled to="/Blog">
+                                Blog
+                            </LinkStyled>
                         </ItemList>
                     </div>
                 </UnorderList>
