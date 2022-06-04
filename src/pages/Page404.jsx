@@ -16,6 +16,8 @@ const ErrorPageWrapper = styled.div`
   display: grid;
   place-content: center;
   color: var(--color-black);
+  justify-items: center;
+  gap: 16px;
 `
 const TbError404Styled =  styled(VscTelescope)`
   font-size: 4rem;
