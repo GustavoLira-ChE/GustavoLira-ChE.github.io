@@ -24,7 +24,7 @@ const Header = () => {
                     </div>
                     <div>
                         <ItemList>
-                            <LinkStyled to="/Blog">
+                            <LinkStyled to="/blog">
                                 Blog
                             </LinkStyled>
                         </ItemList>
