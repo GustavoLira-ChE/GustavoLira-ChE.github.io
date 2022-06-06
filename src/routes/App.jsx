@@ -1,16 +1,13 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import Welcome from '../pages/Welcome';
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
-import Header from '../containers/Header';
-import ProjectPage from '../pages/ProjectPage';
-import Footer from '../containers/Footer';
-import Page404 from '../pages/Page404';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from '../containers/Layout';
+import Header from '../containers/Header';
+import Footer from '../containers/Footer';
+import Welcome from '../pages/Welcome';
+import ProjectPage from '../pages/ProjectPage';
+import NotFound from '../pages/NotFound';
+import BlogPage from '../pages/BlogPage';
 
 
 const App = () => {
@@ -21,8 +18,9 @@ const App = () => {
                 <Routes>
                     <Route path='/' element={<Layout />} >
                         <Route index element={<Welcome />} />
-                        <Route path="projects" element={<ProjectPage />} />
-                        <Route path="*" element={<Page404 />} />
+                        <Route path='projects' element={<ProjectPage />} />
+                        <Route path='blog' element={<BlogPage />} />
+                        <Route path='*' element={<NotFound />} />
                     </Route>
                 </Routes>
                 <Footer />
