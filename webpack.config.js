@@ -14,7 +14,7 @@ module.exports = {
     resolve: {
         extensions: [".js", ".jsx"]
     },
-    mode: "development",
+    mode: "production",
     module: {
         rules: [
             {
@@ -50,4 +50,9 @@ module.exports = {
         maxEntrypointSize: 512000,
         maxAssetSize: 512000
     },
+    devServer: {
+        static: path.join(__dirname,'dist'),
+        port: 3001,
+        historyApiFallback: true,
+    }
 };
