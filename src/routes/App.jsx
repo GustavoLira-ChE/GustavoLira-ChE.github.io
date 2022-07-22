@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Layout from '../containers/Layout';
 import Header from '../containers/Header';
 import Footer from '../containers/Footer';
@@ -13,7 +13,7 @@ import BlogPage from '../pages/BlogPage';
 const App = () => {
     return (
         <Wrappper>
-            <BrowserRouter>
+            <HashRouter>
                 <Header />
                 <Routes>
                     <Route path='/' element={<Layout />} >
@@ -24,7 +24,7 @@ const App = () => {
                     </Route>
                 </Routes>
                 <Footer />
-            </BrowserRouter>
+            </HashRouter>
         </Wrappper>
     );
 };
